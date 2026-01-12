@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* background: #876464; */
+  padding-top: 50px;
+  background: url(/image/developer.png), url(/image/header_bg.png), #5a7863;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  /* background-size: 190px 150px; */
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #005461;
+  padding: 1rem;
+}
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.ff-all {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 2px 0px 130px;
+}
+nav .menu {
+  color: black;
+  display: flex;
+  list-style: none;
+  padding: 1rem;
+  gap: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: azure;
+  align-items: center;
+}
+
+nav .menu a {
+  color: azure;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  background-color: #005461;
+  color: white;
+  cursor: pointer;
+}
+#banner {
+  /* border: 1px solid red; */
+  margin: 12px 2px 0px 130px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.img {
+  width: 70%;
+  height: 40%;
+}
+
+#banner .b-content h2 {
+  margin-bottom: 10px;
+  color: #0c7779;
+  font-weight: 600px;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+#banner .b-content h1 {
+  font-size: 85;
+  color: #011d22;
+  margin-bottom: 10px;
+}
+
+#banner .b-content p {
+  color: white;
+  margin-bottom: 10px;
+}
+#banner .b-content .btn {
+  margin-bottom: 10px;
+}
+
+#banner .img img {
+  width: 470px;
+  height: 500px;
+  vertical-align: middle;
+}
+#about {
+  margin: 50px 130px;
+  /* background: #821d1d; */
+  /* border: 1rem solid red; */
+}
+
+#about .about-content {
+  padding: 80px 60px 40px 60px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ebf4dd;
+}
+#about .about-content .info {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Pre */
+#contact {
+  margin: 50px 130px;
+  align-items: center;
+}
+#contact .con .abc {
+  display: flex;
+}
