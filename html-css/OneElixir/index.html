@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Perfume Store</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: Custom Tailwind theme -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandDark: "#0f2a3a",
+              brandBlue: "#1f4d6b",
+              brandGold: "#d4af37",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-brandDark text-white font-serif">
+    <!-- ================= NAVBAR SECTION ================= -->
+    <nav class="flex items-center justify-between px-10 py-5 bg-brandDark">
+      <!-- Brand Logo -->
+      <h1 class="text-2xl font-bold text-brandGold">Perf</h1>
+
+      <!-- Navigation Links -->
+      <ul class="hidden md:flex gap-8 text-sm tracking-wide">
+        <li class="hover:text-brandGold cursor-pointer">Home</li>
+        <li class="hover:text-brandGold cursor-pointer">Shop</li>
+        <li class="hover:text-brandGold cursor-pointer">Category</li>
+        <li class="hover:text-brandGold cursor-pointer">About</li>
+        <li class="hover:text-brandGold cursor-pointer">Contact</li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-4">
+        <input
+          type="text"
+          placeholder="Search"
+          class="hidden md:block px-3 py-1 rounded bg-brandBlue text-sm outline-none"
+        />
+        <button
+          class="border border-brandGold px-4 py-1 rounded text-sm hover:bg-brandGold hover:text-black"
+        >
+          Cart
+        </button>
+      </div>
+    </nav>
+
+    <!-- ================= BANNER / HERO SECTION ================= -->
+    <section
+      class="grid md:grid-cols-2 gap-10 items-center px-10 py-16 bg-gradient-to-r from-brandDark to-brandBlue"
+    >
+      <!-- Left Text Content -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          Fall in love with<br />
+          Our Signature <span class="text-brandGold">Perfumes</span>
+        </h2>
+
+        <p class="mt-6 text-gray-300 max-w-md">
+          Discover the perfect fragrance for you with our wide selection of
+          premium perfumes.
+        </p>
+
+        <button
+          class="mt-8 bg-brandGold text-black px-8 py-3 rounded-full font-semibold hover:opacity-90"
+        >
+          Shop Now
+        </button>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center">
+        <img
+          src="https://images.unsplash.com/photo-1615634260167-c8cdede054de"
+          alt="Perfume Model"
+          class="rounded-2xl max-w-sm shadow-lg"
+        />
+      </div>
+    </section>
+
+    <!-- ================= PRODUCT SHOWCASING SECTION ================= -->
+    <section class="px-10 py-16">
+      <!-- Section Heading -->
+      <h3 class="text-3xl font-semibold text-center text-brandGold mb-12">
+        Shop Our Wide Selection of Scents
+      </h3>
+
+      <!-- Product Grid -->
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <!-- Product Card 1 -->
+        <div class="bg-brandBlue rounded-2xl p-6 text-center">
+          <img
+            src="https://pngimg.com/uploads/perfume/perfume_PNG10290.png"
+            alt="Perfume Bottle"
+            class="h-40 mx-auto mb-4"
+          />
+          <h4 class="text-lg font-semibold">Rosewood Bliss</h4>
+          <p class="text-brandGold mt-2">$50.00</p>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-brandBlue rounded-2xl p-6 text-center">
+          <img
+            src="https://pngimg.com/uploads/perfume/perfume_PNG10289.png"
+            alt="Perfume Bottle"
+            class="h-40 mx-auto mb-4"
+          />
+          <h4 class="text-lg font-semibold">Citrus Zest</h4>
+          <p class="text-brandGold mt-2">$70.00</p>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-brandBlue rounded-2xl p-6 text-center">
+          <img
+            src="https://pngimg.com/uploads/perfume/perfume_PNG10291.png"
+            alt="Perfume Bottle"
+            class="h-40 mx-auto mb-4"
+          />
+          <h4 class="text-lg font-semibold">Woodland Walk</h4>
+          <p class="text-brandGold mt-2">$90.00</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
