@@ -1,0 +1,11 @@
+.brand {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+
+.wave {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
