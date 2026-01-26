@@ -34,7 +34,7 @@ var total = a + b;
 var firstName = "Faysal";
 var lastName = "Khan";
 var fullName = firstName + " " + lastName;
-console.log(fullName);
+// console.log(fullName);
 // console.log(50 + "20");
 // console.log("50" + 230);
 
@@ -46,5 +46,14 @@ var diff = gPrice - pPrice;
 
 // dunno
 
-console.log(5 > 10);
-console.log(34 > 3);
+// console.log(5 > 10);
+// console.log(34 > 3);
+// console.log(100 <= 100);
+// console.log(100 <= 10);
+//just value:
+console.log(10 == '10'); // true
+// type + value:
+console.log(10 === '10'); // false
+
+
+

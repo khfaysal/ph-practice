@@ -19,3 +19,13 @@ var addRess
 ## -> High Level Lang
 
 ## -> Interpret
+
+
+*** 
+single equal (=) -> value asign
+double equal (==) -> value check (only type)
+triple equal (===) -> value check (type & value)
+
+
+console.log(10 == '10'); // true
+
