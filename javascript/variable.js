@@ -35,11 +35,16 @@ var firstName = "Faysal";
 var lastName = "Khan";
 var fullName = firstName + " " + lastName;
 console.log(fullName);
-console.log(50 + "20");
-console.log("50" + 230);
+// console.log(50 + "20");
+// console.log("50" + 230);
 
 // Subtraction
 var gPrice = 50;
 var pPrice = "30";
 var diff = gPrice - pPrice;
-console.log(diff);
+// console.log(diff);
+
+// dunno
+
+console.log(5 > 10);
+console.log(34 > 3);
