@@ -51,9 +51,10 @@ var diff = gPrice - pPrice;
 // console.log(100 <= 100);
 // console.log(100 <= 10);
 //just value:
-console.log(10 == '10'); // true
+// console.log(10 == '10'); // true
 // type + value:
-console.log(10 === '10'); // false
+// console.log(10 === '10'); // false
+
 
 
 

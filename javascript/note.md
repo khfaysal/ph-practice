@@ -29,3 +29,11 @@ triple equal (===) -> value check (type & value)
 
 console.log(10 == '10'); // true
 
+
+
+
+
+## Scope:
+
+* Nested loop
+* Advance Ternary
