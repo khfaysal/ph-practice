@@ -12,3 +12,4 @@ const name = ["Faysal", "Khan", "John", "Doe"];
 //indexOf .........
 // console.log(name.indexOf('Khan'));
 console.log(Array.isArray(name)); //ture
+
