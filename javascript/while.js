@@ -22,14 +22,26 @@
 // console.log(sum);
 
 // Task-4: count 1 to 10( odds only)
-let v = 1;
-let sumofodd = 0;
-while (v <= 10) {
-  console.log("v:", v);
-  sumofodd = sumofodd + v;
-  v += 2;
-  console.log("------");
-  console.log(sumofodd);
+// let v = 1;
+// let sumofodd = 0;
+// while (v <= 10) {
+//   console.log("v:", v);
+//   sumofodd = sumofodd + v;
+//   v += 2;
+//   console.log("------");
+//   console.log(sumofodd);
+// }
+// console.log("------");
+// console.log(sumofodd);
+
+// Task-5: devided by 5
+
+let n = 1;
+while (n < 100) {
+  n++;
+  if (n % 5 !== 0) { //if not devided by '5'...then skip.
+    continue;
+  }
+  console.log(n);
+  
 }
-console.log("------");
-console.log(sumofodd);
