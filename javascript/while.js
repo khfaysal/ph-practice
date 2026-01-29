@@ -39,7 +39,7 @@
 let n = 1;
 while (n < 100) {
   n++;
-  if (n % 5 !== 0) { //if not devided by '5'...then skip.
+  if (n % 5 !== 0) { //if not devided by '5'...then skip. 
     continue;
   }
   console.log(n);
