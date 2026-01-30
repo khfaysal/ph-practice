@@ -41,3 +41,10 @@ console.log(10 == '10'); // true
 ## Loops:
 * for of -> use in array.
 * for in -> use in object.
+
+
+## Reverse:
+* push()
+* pop()
+* shift()
+* unShift()
