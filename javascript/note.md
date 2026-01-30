@@ -37,3 +37,7 @@ console.log(10 == '10'); // true
 
 * Nested loop
 * Advance Ternary
+
+## Loops:
+* for of -> use in array.
+* for in -> use in object.

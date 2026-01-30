@@ -28,7 +28,6 @@ const values = Object.values(person);
 // console.log(keys);
 // console.log(values);
 
-// T-4:
 
 
 
