@@ -17,8 +17,18 @@ const person = {
   married: false,
   subject: ["math", "chemistry", "swe"],
 };
-console.log(person);
-
+// console.log(person);
 person.name= 'Faysal';
 person.subject=['swe', 'cse'];
-console.log(person);
+// console.log(person);
+
+// T-3: Find Only Objects..&..Only Values:
+const keys= Object.keys(person);
+const values = Object.values(person);
+// console.log(keys);
+// console.log(values);
+
+// T-4:
+
+
+
