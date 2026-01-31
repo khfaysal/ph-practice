@@ -29,3 +29,4 @@ for (let i = numbers.length - 1; i >= 0; i--) {
   rvNum.push(i);
 }
 console.log(rvNum);
+
