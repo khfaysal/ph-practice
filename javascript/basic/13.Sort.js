@@ -6,3 +6,5 @@ let asc_name = names.sort();
 
 console.log(asc_num); //Not working Properly.
 console.log(asc_name);
+
+//Sort change the main array completely.
