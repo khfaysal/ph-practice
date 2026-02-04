@@ -10,4 +10,7 @@
 8. store the function value into an const variable.
 9. show the function value.
 
-END...
+THE END OF Passing Array...
+
+
+
