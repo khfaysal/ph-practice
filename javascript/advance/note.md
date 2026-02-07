@@ -14,3 +14,19 @@ THE END OF Passing Array...
 
 
 
+## Math.something:
+
+* Math.max(1,2,3,4,5); -> 2 5
+* Math.min(1,2,3,4,5); -> 2 1
+* Math.PI; // 3.1416......
+
+* Math.abs(-5); -> 2 5  [Without symble(+-*/)]
+* Math.abs(5-10); -> 2 5
+* Math.abs(-5); -> 2 5
+
+* Math.round(2.25); -> 2
+* Math.round(2.75); -> 3
+
+* Math.flore (2.59) -> 2  [flore->grounded]
+* Math.ceil(2.22)  -> 3   [ceiling->top]
+* Math.random  -> [It will take number randomly between 0 to 1]
