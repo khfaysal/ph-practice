@@ -1,0 +1,36 @@
+/* FOR NAVBAR ONLY */
+#navbar {
+  background: rgb(66, 64, 198);
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  height: 60px;
+  justify-content: center; /* for horixontal-align */
+  align-items: center; /* for vertical-align */
+}
+
+/* for all links inside the NAVBAR */
+#navbar a {
+  text-decoration: none; /*for removing underline and all the decoration */
+  color: white; /* for text color */
+}
+
+/* FOR SEARCH BAR -> BELOW THE NAVBAR: */
+#search {
+  background: wheat;
+  display: flex;
+  justify-content: center; /* for horixontal-align */
+  align-items: center; /* for vertical-align */
+  height: 40px;
+}
+
+/*FOR FOOTER */
+#footer {
+  background: #d95555;
+  height: 35px;
+}
+
+#footer h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}

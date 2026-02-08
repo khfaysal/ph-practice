@@ -17,5 +17,4 @@ console.log(Math.round(3.75));
 
 console.log("Floor-Ceil");
 console.log(Math.floor(2.59));
-console.log(Math.ceil(2.22));
-
+console.log(Math.ceil(2.22);
