@@ -1,0 +1,19 @@
+.division {
+  background-color: rgb(156, 123, 129);
+  height: 100px;
+  width: 100%;
+  border: 2px solid rgb(209, 17, 17);
+
+  /* added by kh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.division:hover {
+  /* transform: skew(60deg); */
+
+  /* added by kh */
+  color: blue;
+  transform: skew(30deg);
+}
