@@ -1,11 +1,4 @@
-// const Product = [
-//   {
-//     name: "Mobile",
-//     price: 10000,
-//     category: "Electronics",
-//     varient: "Global",
-//   },
-// ];
+
 
 function validateProduct(a, b) {
   if (typeof a !== "number" || typeof b !== "number") {
