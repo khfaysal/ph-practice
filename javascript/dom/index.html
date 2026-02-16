@@ -6,28 +6,43 @@
     <title>DOM</title>
   </head>
   <body>
-    <div class="dom">
-      <h1>DOM initialize..</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam at eos
-        recusandae omnis hic ipsam suscipit harum, atque culpa aspernatur!
-      </p>
-    </div>
-    <div class="geB">
-      <ol>
-        <li>Jalali Set</li>
-        <li>Kalali Set</li>
-        <li>Malali Set</li>
-      </ol>
-    </div>
+    <main>
+      <!-- <section class="dom">
+        <h1>DOM initialize..</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam at eos
+          recusandae omnis hic ipsam suscipit harum, atque culpa aspernatur!
+        </p>
+
+        <ol>
+          <li>Jalali Set</li>
+          <li>Kalali Set</li>
+          <li>Malali Set</li>
+        </ol>
+      </section> -->
+      <section>
+        <h1 id="food-tittle">Foods that makes me happy:</h1>
+        <ul>
+          <li>Biriany</li>
+          <li>Kacci</li>
+          <li>Sada Vat with Jhal Fry</li>
+          <li>Sada vat in Winter Morning with Vorta</li>
+          <li>Pizza with red sauce</li>
+        </ul>
+      </section>
+    </main>
 
     <script>
       console.log("Nothing");
-      const liCollection = document.getElementsByTagName("li");
-      console.log(liCollection);
-      for (const li of liCollection) {
-        console.log(li);
-      }
+      //   const liCollection = document.getElementsByTagName("li");
+      //   console.log(liCollection);
+      //   for (const li of liCollection) {
+      //     console.log(li);
+      //   }
+
+      const foodt = document.getElementById("food-tittle");
+      console.log(foodt.innerText);
+
     </script>
     <script src="/js/hello.js"></script>
   </body>
