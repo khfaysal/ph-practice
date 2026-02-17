@@ -4,46 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
+    <style>
+      .bg-red {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <!-- <section class="dom">
+      <section class="dom">
         <h1>DOM initialize..</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam at eos
-          recusandae omnis hic ipsam suscipit harum, atque culpa aspernatur!
+          Lorem ipsum dolor, sit amet <span>kh</span> consectetur adipisicing
+          elit. Quam at eos recusandae omnis hic ipsam
+          <span>faysal</span>suscipit harum, atque culpa aspernatur!
         </p>
-
+        <h1>This is <span>hasan</span> faysal</h1>
         <ol>
-          <li>Jalali Set</li>
+          <li id="jalS">Jalali Set</li>
           <li>Kalali Set</li>
           <li>Malali Set</li>
         </ol>
-      </section> -->
-      <section>
+      </section>
+      <section id="life">
         <h1 id="food-tittle">Foods that makes me happy:</h1>
         <ul>
           <li>Biriany</li>
           <li>Kacci</li>
-          <li>Sada Vat with Jhal Fry</li>
-          <li>Sada vat in Winter Morning with Vorta</li>
-          <li>Pizza with red sauce</li>
+          <li class="prio">Sada Vat with Jhal Fry</li>
+          <li class="prio">Sada vat in Winter Morning with Vorta</li>
+          <li class="prio">Pizza with red sauce</li>
+        </ul>
+      </section>
+      <section id="players-cont">
+        <h1>Player</h1>
+        <ul>
+          <li>CR7</li>
+          <li>Pele</li>
+          <li>Ronaldinho</li>
+          <!-- <li>Kaka</li> -->
+          <li>Carlos</li>
         </ul>
       </section>
     </main>
-
-    <script>
-      console.log("Nothing");
-      //   const liCollection = document.getElementsByTagName("li");
-      //   console.log(liCollection);
-      //   for (const li of liCollection) {
-      //     console.log(li);
-      //   }
-
-      const foodt = document.getElementById("food-tittle");
-      console.log(foodt.innerText);
-
-    </script>
-    <script src="/js/hello.js"></script>
   </body>
 </html>
+
+<script src="/js/hello.js"></script>
