@@ -37,3 +37,7 @@ document.
 * childNodes parentNode
 * createElement
 * append the child  [add child to the list]
+* create a whole section with h1 and list using js
+
+[initially create a variable to store main section id, then create section, under section create h1, under section create ul and finally create li under ul with the help of appendChild add them all and add inner text using the variable names] ***
+
