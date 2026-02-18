@@ -32,3 +32,8 @@ document.
 * change css using js
 * getAtribute
 * setAtribute
+* childNodes
+* childNodes[0]
+* childNodes parentNode
+* createElement
+* append the child  [add child to the list]
