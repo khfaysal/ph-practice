@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment Box</title>
+    <style>
+      .comment {
+        border: 2px solid red;
+        border-radius: 4px;
+        background: rgb(164, 163, 163);
+        gap: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>All Comments Here</h1>
+
+    <div id="comment-container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, quidem.
+        Eos, suscipit blanditiis repellendus vitae sit non quam laudantium ipsa
+        repudiandae similique eveniet iusto molestias assumenda maxime
+        dignissimos, voluptatem dicta.
+      </p>
+
+      <br />
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi
+        ullam non error eveniet sunt! Sed, odit vel non at nulla, repellendus
+        dicta dolore dolorum explicabo corrupti, tempora ducimus harum.
+      </p>
+
+      <br />
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quaerat
+        voluptate ipsa, animi numquam recusandae tempore quam aliquam labore
+        nihil asperiores saepe quibusdam accusamus esse dolore a, distinctio
+        mollitia aspernatur.
+      </p>
+    </div>
+    <br />
+    <br />
+
+    <textarea name="" id="text-area" cols="60" rows="6"></textarea>
+    <button id="btn-post">Post</button>
+
+    <h1>Mouseenter, Mouseover, Mouseout, Mousedown, Mouseleave</h1>
+
+    <button id="btn-change">Click Me To Show Changes</button>
+
+    <script>
+      document
+        .getElementById("btn-post")
+        .addEventListener("click", function () {
+          // retrive the comment from text area:
+          const textItem = document.getElementById("text-area");
+          const newComment = textItem.value;
+
+          //access the main comment container:
+          const mainContainer = document.getElementById("comment-container");
+          //   console.log("comment container   accessed");
+          //crate p tag and assign value
+          const commentss = document.createElement("p");
+          commentss.innerText = newComment;
+          //connect the parent to the new p tag
+          mainContainer.appendChild(commentss);
+        });
+      document
+        .getElementById("btn-change")
+        .addEventListener("mouseenter", function () {
+          console.log("mouseOver Done");
+        });
+    </script>
+  </body>
+</html>
