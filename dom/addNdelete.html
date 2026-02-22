@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add and Delete</title>
+    <style>
+      #main-sec {
+        border: 4px solid antiquewhite;
+        align-items: left;
+        text-align: left;
+        padding-left: 580px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main-sec">
+      <h1>Name or PEOPLES:</h1>
+      <ol id="main-ol">
+        <li class="i-name">Kamrul</li>
+        <li class="i-name">Meherab</li>
+        <li class="i-name">Irfan</li>
+        <li class="i-name">Saim</li>
+      </ol>
+
+      <br /><br />
+      <input id="in-text" type="text" />
+      <button id="btn-add">Add Names in the List</button>
+    </section>
+
+    <script>
+      // CLick to remove names:
+      const names = document.getElementsByClassName("i-name");
+      for (const name of names) {
+        name.addEventListener("click", function (event) {
+          event.target.parentNode.removeChild(event.target);
+        });
+        // console.log(name);
+      }
+
+      //input name to add:
+      document.getElementById("btn-add").addEventListener("click", function () {
+        const takeName = document.getElementById("in-text");
+        // console.log(takeName.value);
+        const assignName = document.getElementById("main-ol");
+        const newName = document.createElement("li");
+        newName.innerText = takeName.value;
+
+        assignName.appendChild(newName);
+        takeName.value = ""; //it will empty the input box while click the add button.
+      });
+    </script>
+  </body>
+</html>

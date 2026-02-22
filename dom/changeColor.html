@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom events</title>
+  </head>
+  <body>
+    <main>
+      <h1>Dom Doma Dom Dom!</h1>
+
+      <button onclick="console.log('Click me')">Click Me</button>
+      <h2>t-2 : calling by function name</h2>
+
+      <button onclick="mG()">Make Green</button>
+      <button onclick="mY()">Make Yellow</button>
+      <button onclick="mR()">Make Red</button>
+      <br /><br />
+
+      <h2>t-3 : calling by Id</h2>
+      <button id="btn-green">Make Green</button>
+      <button id="btn-purple">Make Purple</button>
+
+      <br /><br />
+      <h2>t-4 calling by addEventListener</h2>
+      <button id="make-aqua">Make Aqua</button>
+    </main>
+
+    <!-- script src -->
+    <script>
+      // Type-2
+      function mY() {
+        document.body.style.backgroundColor = "yellow";
+      }
+      function mR() {
+        document.body.style.backgroundColor = "red";
+      }
+      function mG() {
+        document.body.style.backgroundColor = "green";
+      }
+      function mP() {
+        document.body.style.backgroundColor = "purple";
+      }
+      function mA() {
+        document.body.style.backgroundColor = "aqua";
+      }
+
+      // Type-3: another way to call by 'Id'
+      const btnGreen = document.getElementById("btn-green");
+      btnGreen.onclick = mG; // Assign the function reference, NOT call it
+
+      const btnPurple = document.getElementById("btn-purple");
+      btnPurple.onclick = mP;
+
+      // Type-4: addEventListener
+      const AQ = document
+        .getElementById("make-aqua")
+        .addEventListener("click", mA);
+    </script>
+  </body>
+</html>

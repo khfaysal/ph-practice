@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+  </head>
+  <body>
+    <main>
+      <h1 id="tiitle-text">Change the Tittle</h1>
+      <button id="tittle-change">Tab Me</button>
+      <br />
+      <!-- -- -->
+      <br />
+
+      <h1 id="loggedIn">log in</h1>
+      <button id="btn-login">Login</button>
+
+      <br />
+      <!-- -- -->
+      <br />
+
+      <h1>Add Name Yourself</h1>
+      <fieldset>
+        <legend id="noName">No Name</legend>
+        <input id="nm" type="text" name="" id="" />
+        <button id="upName">Update</button>
+      </fieldset>
+    </main>
+    <script>
+      document.getElementById("upName").addEventListener("click", function () {
+        // get the name from input
+        const name = document.getElementById("nm");
+        // console.log(name.value);
+
+        const createName = document.getElementById("noName");
+        createName.innerText = name.value;
+      });
+    </script>
+  </body>
+</html>

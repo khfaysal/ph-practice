@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubble</title>
+    <style>
+      #main-body {
+        border: 1px solid red;
+      }
+      #main-sec {
+        border: 1px solid rgb(16, 49, 170);
+      }
+      ul {
+        border: 1px solid rgb(27, 174, 83);
+      }
+      li {
+        border: 1px solid rgb(176, 24, 113);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main-body">
+      <h1>Explore Event Bubble</h1>
+      <section id="main-sec">
+        <h2>Lists of things</h2>
+        <ul id="main-ul">
+          <li id="item-1">Lorem, ipsum.</li>
+          <li id="item-2">Quos, molestiae.</li>
+          <li id="item-3">Ratione, nobis!</li>
+          <li id="item-4">Obcaecati, culpa?</li>
+          <li id="item-5">Molestias, nobis.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      document
+        .getElementById("item-2")
+        .addEventListener("click", function (event) {
+          console.log("item 2 clicked");
+          event.stopImmediatePropagation(); //stop propagate
+        });
+      document.getElementById("main-ul").addEventListener("click", function () {
+        console.log("main ul clicked");
+      });
+      document
+        .getElementById("main-sec")
+        .addEventListener("click", function () {
+          console.log("main section clicked");
+        });
+      document
+        .getElementById("main-body")
+        .addEventListener("click", function () {
+          console.log("main body clicked");
+        });
+    </script>
+  </body>
+</html>
+
+<!-- To see how event bubbling happens click the bellow link [ctrl + click] -->
+<!-- Event Bubbling: https://javascript.info/article/bubbling-and-capturing/eventflow.svg  -->

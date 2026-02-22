@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Child</title>
+  </head>
+  <body>
+    <section>
+      <h1>Remove a childe from bellow:</h1>
+      <ol id="order-list">
+        <li class="item">Kamrul</li>
+        <li class="item">Hasan</li>
+        <li class="item">Faysal</li>
+        <li class="item">Ratul</li>
+        <li class="item">Tonmoy</li>
+      </ol>
+    </section>
+
+    <script>
+      const children = document.getElementsByClassName("item");
+      for (const child of children) {
+        child.addEventListener("click", function (event) {
+          event.target.parentNode.removeChild(event.target);
+        });
+        // console.log(child);
+      }
+    </script>
+  </body>
+</html>
+
+<!-- event.target.parentNode.removeChild(event.target) -> event.target denotes the targeted element, .parentNode means callit its (event.target) parent to do something...what to do -> to remove its child. which child -> (event.target)  means which element to click delete that element -->
