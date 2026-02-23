@@ -30,26 +30,31 @@
     </section>
 
     <script>
-      // CLick to remove names:
-      const names = document.getElementsByClassName("i-name");
-      for (const name of names) {
-        name.addEventListener("click", function (event) {
-          event.target.parentNode.removeChild(event.target);
+        // CLick to remove names:
+        const names = document.getElementsByClassName("i-name");
+        for (const name of names) {
+          name.addEventListener("click", function (event) {
+            event.target.parentNode.removeChild(event.target);
+          });
+          // console.log(name);
+        }
+
+        //   //able to delete the new names also:
+      //   document.getElementById("main-ol");
+      //   addEventListener("click", function (event) {
+      //     event.target.parentNode.removeChild(event.target);
+      //   });
+        //input name to add:
+        document.getElementById("btn-add").addEventListener("click", function () {
+          const takeName = document.getElementById("in-text");
+          // console.log(takeName.value);
+          const assignName = document.getElementById("main-ol");
+          const newName = document.createElement("li");
+          newName.innerText = takeName.value;
+
+          assignName.appendChild(newName);
+          takeName.value = ""; //it will empty the input box while click the add button.
         });
-        // console.log(name);
-      }
-
-      //input name to add:
-      document.getElementById("btn-add").addEventListener("click", function () {
-        const takeName = document.getElementById("in-text");
-        // console.log(takeName.value);
-        const assignName = document.getElementById("main-ol");
-        const newName = document.createElement("li");
-        newName.innerText = takeName.value;
-
-        assignName.appendChild(newName);
-        takeName.value = ""; //it will empty the input box while click the add button.
-      });
     </script>
   </body>
 </html>

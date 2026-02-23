@@ -3,12 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skew Example</title>
-    <link rel="stylesheet" href="/skew.css" />
+    <title>Job Card - Faisal</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="division">
-      <h1>Block</h1>
+  <body class="bg-gray-500 p-10 flex justify-center">
+    <div
+      class="relative w-full max-w-2xl p-6 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow group"
+    >
+      <div class="flex justify-between items-start mb-1">
+        <div>
+          <h3 class="text-[#002D5B] text-lg font-bold">Mobile First Corp</h3>
+          <p class="text-[#72849A] text-base font-medium">
+            React Native Developer
+          </p>
+        </div>
+
+        <!-- <button
+          class="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors border border-gray-100 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M3 6h18"></path>
+            <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
+            <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
+            <line x1="10" y1="11" x2="10" y2="17"></line>
+            <line x1="14" y1="11" x2="14" y2="17"></line>
+          </svg>
+        </button> -->
+      </div>
+
+      <div class="flex items-center gap-2 text-[#72849A] text-sm mb-4">
+        <span>Remote</span>
+        <span class="text-gray-300">•</span>
+        <span>Full-time</span>
+        <span class="text-gray-300">•</span>
+        <span>$130,000 - $175,000</span>
+      </div>
+
+      <div class="mb-4">
+        <span
+          class="inline-block px-3 py-1 bg-[#F0F5FF] text-[#002D5B] text-[10px] font-bold rounded uppercase tracking-wider"
+        >
+          Not Applied
+        </span>
+      </div>
+
+      <p class="text-[#4A5568] text-sm leading-relaxed mb-6">
+        Build cross-platform mobile applications using React Native. Work on
+        products used by millions of users worldwide.
+      </p>
+
+      <div class="flex gap-3">
+        <button
+          class="px-5 py-2 border border-[#10B981] text-[#10B981] text-xs font-bold rounded hover:bg-[#10B981] hover:text-white transition-colors uppercase cursor-pointer"
+        >
+          Interview
+        </button>
+        <button
+          class="px-5 py-2 border border-[#EF4444] text-[#EF4444] text-xs font-bold rounded hover:bg-[#EF4444] hover:text-white transition-colors uppercase cursor-pointer"
+        >
+          Rejected
+        </button>
+      </div>
     </div>
   </body>
 </html>
