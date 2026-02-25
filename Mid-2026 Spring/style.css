@@ -1,0 +1,53 @@
+/* .............  */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  background: white;
+  width: 100%;
+  /* border: 2px solid rgb(207, 143, 15); */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  width: 100%;
+  border: 1px solid magenta;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  /* border: 1px solid rgba(5, 16, 131, 0.934); */
+  display: flex;
+  gap: 10px;
+}
+
+.phnNmail {
+  width: 100%;
+  /* border: 1px solid rgba(17, 192, 46, 0.934); */
+  align-items: right;
+}
+
+input,
+select,
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background: black;
+  color: white;
+}
