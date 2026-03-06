@@ -1,0 +1,19 @@
+#mainContainer {
+  border: 3px solid red;
+  margin: 50px, auto;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+#cards {
+  border: 2px solid red;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+#cards.p {
+  justify-content: center;
+}
