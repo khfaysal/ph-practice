@@ -4,8 +4,8 @@ data = 1; // value 1 or more indicates true
 data = ""; // faka string
 data = " "; // space is not empty, a charecter, so ture
 data = "0";
-data = undefined;
-data = null;
+// data = undefined;
+// data = null;
 
 function truthy() {
   if (data) {

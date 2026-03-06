@@ -1,0 +1,1 @@
+arrow func => is an anonymas functon. coz there is no name of those types of function, there is a name which is a constant name not func.
