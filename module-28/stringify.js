@@ -9,3 +9,5 @@ console.log(person, typeof person);
 
 const name = JSON.stringify(person);
 console.log(name, typeof name);
+
+const jss = JSON.parse(name);

@@ -15,7 +15,7 @@ const displayCart = (post) => {
     const postCards = document.createElement("div");
     postCards.innerHTML = `
           <div id="cards">
-        <h1>${posts.name}</h1>
+        <h1>${posts.id}</h1>
         <p>
          ${posts.email}
         </p>
