@@ -9,6 +9,7 @@ function App() {
       <Developer name="Faysal"></Developer>
       <Developer name="hasan"></Developer>
       <Developer name="jahan"></Developer>
+      <Nothing></Nothing>
 
     </>
 
@@ -45,6 +46,11 @@ function Myself() {
   )
 }
 
+function Nothing () {
+  return(
+    <h1>Nothing is happening here..</h1>
+  )
+}
 
 
 export default App
