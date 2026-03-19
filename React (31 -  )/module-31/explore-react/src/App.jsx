@@ -1,56 +1,32 @@
-import './App.css'
-
-function App() {
-
+import ToDo from "./ToDo";
+export default function App() {
+  const sss = {
+    color: 'red',
+    textAlign: "center"
+  }
   return (
     <>
-      <h1>hi</h1>
+      <h1 style={sss}>Props Passing</h1>
       <Myself></Myself>
-      <Developer name="Faysal"></Developer>
-      <Developer name="hasan"></Developer>
-      <Developer name="jahan"></Developer>
-      <Nothing></Nothing>
-
+      <ToDo
+        task="Learn React"
+        isDone={true}></ToDo >
+      <ToDo
+        task="get some rest"
+        isDone={false}></ToDo >
+      <ToDo
+        task="have some talk"
+        isDone={true}></ToDo >
     </>
 
   )
 }
-
-function Developer(props) {
-  return (
-    <div style={{
-      color: 'blue',
-      border: '2px solid yellow',
-      borderRadius: '25px',
-      background: 'gray',
-    }}>
-
-      <h1> Developer</h1>
-      <p>{props.name}</p>
-    </div>
-  )
-}
-
-
-
 function Myself() {
   const ss = {
-    color: "red",
-    textAlign: 'right',
+    color: "green",
+    textAlign: 'center',
   }
   return (
-    <h1> hi, i am faysal</h1 >,
-    <p>i'm a student</p>,
-    <p>in DIU</p>,
-    <p style={ss}>seasson 2023-27</p>
+    <h1 style={ss}> hi, i am faysal...i'm a student, currently studied in DIU</h1>
   )
 }
-
-function Nothing () {
-  return(
-    <h1>Nothing is happening here..</h1>
-  )
-}
-
-
-export default App
