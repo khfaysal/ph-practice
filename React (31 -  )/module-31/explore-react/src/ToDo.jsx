@@ -3,7 +3,6 @@ export default function ToDo({ task, isDone }) {
         color: "gray",
         textAlign: 'center',
     }
-
     if (isDone) {
         return (
 
